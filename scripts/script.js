@@ -11,6 +11,7 @@ var result = 0;
 var display = document.querySelector(".display");
 var calculated = false;
 
+// Add event listeners to the number buttons
 for (var i = 0; i < 10; i++) {
 	document.querySelectorAll(".number")[i].addEventListener("click", (event) => {
 		if (calculated) {
@@ -21,16 +22,19 @@ for (var i = 0; i < 10; i++) {
 	});
 }
 
+// Add event listener to the operator buttons
 for (let i = 0; i < 4; i++) {
 	document.querySelectorAll(".operator")[i].addEventListener("click", (event) => {
 		onOperatorClick(event);
 	});
 }
 
+// Add event listener to the equal button
 document.getElementById("equal").addEventListener("click", () => {
 	updateCalculations();
 });
 
+// Add event listener to the ac button
 document.getElementById("ac").addEventListener("click", () => {
 	reset();
 })
@@ -58,6 +62,7 @@ onOperatorClick = (event) => {
 	}
 }
 
+// Do the calculation and update to the display
 updateCalculations = () => {
 	operand1 = parseInt(operand1);
 	operand2 = parseInt(operand2);
@@ -76,6 +81,7 @@ updateCalculations = () => {
 	display.textContent = result;
 }
 
+// Reset calculator state
 reset = () => {
 	operand1 = "";
 	operand2 = "";
