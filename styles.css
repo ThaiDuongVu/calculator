@@ -1,0 +1,87 @@
+body {
+	background-color: #222831;
+	color: #eeeeee;
+
+	font-family: "Roboto";
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	text-align: center;
+}
+
+.app-name {
+	font-size: xx-large;
+	margin-bottom: 2rem;
+}
+
+.display {
+	font-family: "Roboto";
+	font-size: 2rem;
+
+	border: 2px solid #eeeeee;
+	border-radius: 0.5rem;
+
+	background-color: #222831;
+	color: #eeeeee;
+
+	text-align: center;
+	padding-top: 2rem;
+
+	width: 20.5rem;
+	height: 4rem;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: row;
+}
+
+.row {
+	display: flex;
+}
+
+.white {
+	flex: 1;
+
+	font-family: "Roboto";
+	font-size: 1.3rem;
+
+	padding: 2rem;
+	border: 2px solid #222831;
+	border-radius: 0.5rem;
+
+	background-color: #eeeeee;
+	color: #222831;
+}
+
+.white:hover {
+	border: 2px solid #eeeeee;
+
+	background-color: #222831;
+	color: #eeeeee;
+}
+
+.blue {
+	flex: 1;
+
+	font-family: "Roboto";
+	font-size: 1.3rem;
+
+	padding: 2rem;
+	border: 2px solid #222831;
+	border-radius: 0.5rem;
+
+	background-color: #00adb5;
+	color: #eeeeee;
+}
+
+.blue:hover {
+	border: 2px solid #00adb5;
+
+	background-color: #222831;
+	color: #eeeeee;
+}
