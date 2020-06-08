@@ -1,18 +1,18 @@
-var operand1 = "";
-var operand2 = "";
+let operand1 = "";
+let operand2 = "";
 
-var operand1Entered = false;
-var operand2Entered = false;
+let operand1Entered = false;
+let operand2Entered = false;
 
-var operator = "";
-var operatorEntered = false;
+let operator = "";
+let operatorEntered = false;
 
-var result = 0;
-var display = document.querySelector(".display");
-var calculated = false;
+let result = 0;
+let display = document.querySelector(".display");
+let calculated = false;
 
 // Add event listeners to the number buttons
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
 	document.querySelectorAll(".number")[i].addEventListener("click", (event) => {
 		if (calculated) {
 			reset();
